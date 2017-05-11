@@ -79,7 +79,7 @@ namespace TemplateParser.Test
         }
 
         [TestMethod]
-        public void Empty_Values_Test()
+        public void Null_Values_Test()
         {
             var rawString = "Jim from New York, NY";
 
@@ -87,6 +87,17 @@ namespace TemplateParser.Test
 
             var expectedResult = "Jim from New York, NY";
             var actualResult = defaultParser.ParseTemplate(rawString, new[] { nullObj });
+
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [TestMethod]
+        public void Null_Input_Test()
+        {            
+            object nullObj = null;
+
+            var expectedResult = string.Empty;
+            var actualResult = defaultParser.ParseTemplate(null, new[] { nullObj });
 
             Assert.AreEqual(expectedResult, actualResult);
         }

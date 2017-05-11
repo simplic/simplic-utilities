@@ -1,12 +1,8 @@
 ﻿using SmartFormat;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TemplateParser.Impl
-{    
+{
     public class DefaultParser : ITemplateParser
     {
         /// <summary>
@@ -15,6 +11,9 @@ namespace TemplateParser.Impl
         /// <param name="input">Template text to be stripped</param>        
         private string StripSyntax(string input)
         {
+            if (string.IsNullOrEmpty(input))
+                return string.Empty;
+
             return input.Replace("${", "{");
         }
 
@@ -27,7 +26,10 @@ namespace TemplateParser.Impl
         /// <returns>A parsed string with the values replaced.</returns>
         public string ParseTemplate(string input, object[] values)
         {
-            input = StripSyntax(input);  
+            if (string.IsNullOrEmpty(input))
+                return string.Empty;
+
+            input = StripSyntax(input);
             return Smart.Format(input, values);
         }
 
@@ -39,8 +41,11 @@ namespace TemplateParser.Impl
         /// <returns>A parsed string with the values replaced.</returns>
         public string ParseTemplate(string input, IDictionary<string, string> values)
         {
+            if (string.IsNullOrEmpty(input))
+                return string.Empty;
+
             input = StripSyntax(input);
             return Smart.Format(input, values);
-        }        
+        }
     }
 }
