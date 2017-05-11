@@ -59,5 +59,36 @@ namespace TemplateParser.Test
 
             Assert.AreEqual(expectedResult, actualResult);
         }
+
+
+        [TestMethod]
+        public void Empty_Input_Test()
+        {
+            var rawString = "";
+
+            Dictionary<string, string> dicToTest = new Dictionary<string, string>{
+               { "Name" , "Jim" },
+               { "City" , "New York" },
+               { "State" , "NY" }
+           };
+
+            var expectedResult = "";
+            var actualResult = defaultParser.ParseTemplate(rawString, dicToTest);
+
+            Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [TestMethod]
+        public void Empty_Values_Test()
+        {
+            var rawString = "Jim from New York, NY";
+
+            object nullObj = null;
+
+            var expectedResult = "Jim from New York, NY";
+            var actualResult = defaultParser.ParseTemplate(rawString, new[] { nullObj });
+
+            Assert.AreEqual(expectedResult, actualResult);
+        }
     }
 }
