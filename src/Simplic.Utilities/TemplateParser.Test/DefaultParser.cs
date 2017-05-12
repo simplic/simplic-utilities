@@ -1,17 +1,16 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 
-namespace TemplateParser.Test
+namespace Simplic.Utilities.TemplateParser.Test
 {
     [TestClass]
     public class DefaultParser
     {        
-        TemplateParser.Impl.DefaultParser defaultParser;
+        ITemplateParser defaultParser;
 
         public DefaultParser()
         {
-            defaultParser = new TemplateParser.Impl.DefaultParser();
+            defaultParser = new TemplateParser.DefaultParser();
         }
 
         [TestMethod]

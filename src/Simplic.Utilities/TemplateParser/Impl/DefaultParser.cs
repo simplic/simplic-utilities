@@ -1,7 +1,7 @@
 ﻿using SmartFormat;
 using System.Collections.Generic;
 
-namespace TemplateParser.Impl
+namespace Simplic.Utilities.TemplateParser
 {
     public class DefaultParser : ITemplateParser
     {
@@ -40,6 +40,22 @@ namespace TemplateParser.Impl
         /// <param name="values">A dictionary of values to replace the variables in the input string</param>
         /// <returns>A parsed string with the values replaced.</returns>
         public string ParseTemplate(string input, IDictionary<string, string> values)
+        {
+            if (string.IsNullOrEmpty(input))
+                return string.Empty;
+
+            input = StripSyntax(input);
+            return Smart.Format(input, values);
+        }
+
+
+        /// <summary>
+        /// Parses an input with given dictionary values.
+        /// </summary>
+        /// <param name="input">Raw input string, i.e.: Hi {Name}</param>
+        /// <param name="values">A dictionary of values to replace the variables in the input string</param>
+        /// <returns>A parsed string with the values replaced.</returns>
+        public string ParseTemplate(string input, IDictionary<string, object> values)
         {
             if (string.IsNullOrEmpty(input))
                 return string.Empty;
