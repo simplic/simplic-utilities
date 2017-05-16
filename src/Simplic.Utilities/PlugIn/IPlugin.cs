@@ -3,7 +3,7 @@
 namespace Simplic.Utilities.Plugin
 {
     /// <summary>
-    /// A simple Simplic.Plugin interface definition   
+    /// A simple Simplic.Plugin interface   
     /// </summary>
     public interface IPlugin : IDisposable
     {
@@ -18,20 +18,18 @@ namespace Simplic.Utilities.Plugin
         void Run();
 
         /// <summary>
-        /// This method returns the name of the plugin.
+        /// The name of the plugin.
         /// </summary>
-        string PluginName();
+        string PluginName { get; }
 
         /// <summary>
-        /// This method returns the version of the plugin.
+        /// The plugin version
         /// </summary>
-        /// <returns></returns>
-        string PluginVersion();
+        string PluginVersion { get; }
 
         /// <summary>
-        /// This method returns the guid of the plugin.
+        /// The guid of the plugin.
         /// </summary>
-        /// <returns></returns>
-        Guid PluginGuid();
+        Guid PluginGuid { get; }       
     }
 }

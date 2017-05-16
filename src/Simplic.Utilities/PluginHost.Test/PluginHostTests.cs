@@ -14,6 +14,7 @@ namespace Simplic.Utilities.Plugin.Test
         [TestMethod()]
         public void PluginHostTest()
         {
+            //TODO: Do a real Test.
             Assert.IsTrue(true);
         }
     }
