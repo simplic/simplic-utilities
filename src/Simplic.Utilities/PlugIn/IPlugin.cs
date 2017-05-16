@@ -30,6 +30,6 @@ namespace Simplic.Utilities.Plugin
         /// <summary>
         /// The guid of the plugin.
         /// </summary>
-        Guid PluginGuid { get; }       
+        Guid PluginId { get; }       
     }
 }
