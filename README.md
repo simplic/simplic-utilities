@@ -1,14 +1,14 @@
 # simplic-utilities
 Contains a various set of utilities used by the simplic products.
 
-# Template Parser
+## Template Parser
 
 ...
 
-# Plugin System
+## Plugin System
 
 ...
 
-# MEF System
+## MEF System
 
 ...
