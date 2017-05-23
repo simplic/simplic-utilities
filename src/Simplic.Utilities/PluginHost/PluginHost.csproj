@@ -44,12 +44,6 @@
     <Compile Include="PluginHost.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PlugIn\Plugin.csproj">
-      <Project>{2C1B8FF8-6FCA-4A79-9E4E-89807A437955}</Project>
-      <Name>Plugin</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

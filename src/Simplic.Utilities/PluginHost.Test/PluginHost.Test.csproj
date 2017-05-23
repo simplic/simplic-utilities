@@ -54,12 +54,6 @@
     <Compile Include="PluginHostTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PluginHost\PluginHost.csproj">
-      <Project>{9F51063D-7475-4EB6-BB46-C4BDE11A2051}</Project>
-      <Name>PluginHost</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
