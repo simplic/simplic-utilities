@@ -15,16 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginHost.Test", "PluginHo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplic.CoreLib", "Simplic.CoreLib\Simplic.CoreLib.csproj", "{94401A6D-06D1-4822-9E0F-F71BC92E94C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplic.ICR", "Simplic.ICR\Simplic.ICR.csproj", "{F81E04A1-D11F-4BE3-A8A7-312DB322662E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplic.IPC", "Simplic.IPC\Simplic.IPC.csproj", "{A99DDEB9-F7B7-4B4E-9DB2-19C474D7C682}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplic.Lexer", "Simplic.Lexer\Simplic.Lexer.csproj", "{6730BE32-17E4-48EB-9249-F25857E70912}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplic.Log", "Simplic.Log\Simplic.Log.csproj", "{1D80119B-A27E-4684-8106-05003C94E70C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplic.SAAP", "Simplic.SAAP\Simplic.SAAP.csproj", "{4494B5D8-032F-4C62-8D10-E12860824D9E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug_x86x_64|Any CPU = Debug_x86x_64|Any CPU
@@ -68,36 +58,6 @@ Global
 		{94401A6D-06D1-4822-9E0F-F71BC92E94C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94401A6D-06D1-4822-9E0F-F71BC92E94C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94401A6D-06D1-4822-9E0F-F71BC92E94C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F81E04A1-D11F-4BE3-A8A7-312DB322662E}.Debug_x86x_64|Any CPU.ActiveCfg = Debug|Any CPU
-		{F81E04A1-D11F-4BE3-A8A7-312DB322662E}.Debug_x86x_64|Any CPU.Build.0 = Debug|Any CPU
-		{F81E04A1-D11F-4BE3-A8A7-312DB322662E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F81E04A1-D11F-4BE3-A8A7-312DB322662E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F81E04A1-D11F-4BE3-A8A7-312DB322662E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F81E04A1-D11F-4BE3-A8A7-312DB322662E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A99DDEB9-F7B7-4B4E-9DB2-19C474D7C682}.Debug_x86x_64|Any CPU.ActiveCfg = Debug|Any CPU
-		{A99DDEB9-F7B7-4B4E-9DB2-19C474D7C682}.Debug_x86x_64|Any CPU.Build.0 = Debug|Any CPU
-		{A99DDEB9-F7B7-4B4E-9DB2-19C474D7C682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A99DDEB9-F7B7-4B4E-9DB2-19C474D7C682}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A99DDEB9-F7B7-4B4E-9DB2-19C474D7C682}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A99DDEB9-F7B7-4B4E-9DB2-19C474D7C682}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6730BE32-17E4-48EB-9249-F25857E70912}.Debug_x86x_64|Any CPU.ActiveCfg = Debug_x86x_64|Any CPU
-		{6730BE32-17E4-48EB-9249-F25857E70912}.Debug_x86x_64|Any CPU.Build.0 = Debug_x86x_64|Any CPU
-		{6730BE32-17E4-48EB-9249-F25857E70912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6730BE32-17E4-48EB-9249-F25857E70912}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6730BE32-17E4-48EB-9249-F25857E70912}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6730BE32-17E4-48EB-9249-F25857E70912}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1D80119B-A27E-4684-8106-05003C94E70C}.Debug_x86x_64|Any CPU.ActiveCfg = Debug_x86x_64|Any CPU
-		{1D80119B-A27E-4684-8106-05003C94E70C}.Debug_x86x_64|Any CPU.Build.0 = Debug_x86x_64|Any CPU
-		{1D80119B-A27E-4684-8106-05003C94E70C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D80119B-A27E-4684-8106-05003C94E70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D80119B-A27E-4684-8106-05003C94E70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D80119B-A27E-4684-8106-05003C94E70C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4494B5D8-032F-4C62-8D10-E12860824D9E}.Debug_x86x_64|Any CPU.ActiveCfg = Debug_x86x_64|Any CPU
-		{4494B5D8-032F-4C62-8D10-E12860824D9E}.Debug_x86x_64|Any CPU.Build.0 = Debug_x86x_64|Any CPU
-		{4494B5D8-032F-4C62-8D10-E12860824D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4494B5D8-032F-4C62-8D10-E12860824D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4494B5D8-032F-4C62-8D10-E12860824D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4494B5D8-032F-4C62-8D10-E12860824D9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
