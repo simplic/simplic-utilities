@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94401A6D-06D1-4822-9E0F-F71BC92E94C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Simplic</RootNamespace>
+    <AssemblyName>Simplic.CoreLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Simplic.Main\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_x86x_64|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug_x86x_64\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\CacheKeyItem.cs" />
+    <Compile Include="Cache\CacheManager.cs" />
+    <Compile Include="Cache\CollectionCacheItem.cs" />
+    <Compile Include="Cache\ICacheable.cs" />
+    <Compile Include="Cache\TypedWeakReference.cs" />
+    <Compile Include="Cache\WeakReferenceCachable.cs" />
+    <Compile Include="Collections\Generic\StatefulCollection.cs" />
+    <Compile Include="Collections\Generic\ConcurrentList.cs" />
+    <Compile Include="Collections\Generic\Deqeue.cs" />
+    <Compile Include="Collections\Generic\ThreadsafeDictionary.cs" />
+    <Compile Include="Console\ConsoleHelper.cs" />
+    <Compile Include="Data\DbTypeMap.cs" />
+    <Compile Include="Data\ObservableDataRow.cs" />
+    <Compile Include="Data\ObservableDataTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ini\IniFileSettings.cs" />
+    <Compile Include="IO\DirectoryHelper.cs" />
+    <Compile Include="IO\FileHelper.cs" />
+    <Compile Include="Locking\ILockable.cs" />
+    <Compile Include="Memory\MemAlloc.cs" />
+    <Compile Include="Net\NetworkHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\MethodInfoKey.cs" />
+    <Compile Include="Reflection\NamespaceHelper.cs" />
+    <Compile Include="Reflection\TypeHelper.cs" />
+    <Compile Include="Simplic\GuidUtility.cs" />
+    <Compile Include="Simplic\SeperatedStringBuilder.cs" />
+    <Compile Include="Text\RegularExpressions\RegexFilter.cs" />
+    <Compile Include="Security\Cryptography\CryptographyHelper.cs" />
+    <Compile Include="Security\Principal\WindowsPrincipalHelper.cs" />
+    <Compile Include="Simplic\BaseException.cs" />
+    <Compile Include="Simplic\CIExpandoObject.cs" />
+    <Compile Include="Simplic\ConvertHelper.cs" />
+    <Compile Include="Simplic\StringHelper.cs" />
+    <Compile Include="Simplic\UrlHelper.cs" />
+    <Compile Include="Simplic\VersionHelper.cs" />
+    <Compile Include="Simplic\TypeHelper.cs" />
+    <Compile Include="Text\StringExtraction.cs" />
+    <Compile Include="Win_32\HwndHandling.cs" />
+    <Compile Include="Win_32\WindowsSession.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
