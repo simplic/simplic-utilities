@@ -38,6 +38,14 @@
       <HintPath>..\packages\Simplic.CoreLib.6.0.0\lib\net451\Simplic.CoreLib.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Simplic.Log, Version=6.0.0.17037, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Simplic.Log.6.0.0.17037\lib\net451\Simplic.Log.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Simplic.SAAP, Version=6.0.0.16592, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Simplic.SAAP.6.0.0.16592\lib\net451\Simplic.SAAP.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
