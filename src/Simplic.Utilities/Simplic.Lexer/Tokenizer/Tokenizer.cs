@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Simplic.Collections.Generic;
+using System;
 using System.Linq;
 
 namespace Simplic.Lexer
