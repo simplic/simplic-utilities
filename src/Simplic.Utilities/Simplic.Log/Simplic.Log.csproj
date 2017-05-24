@@ -41,14 +41,6 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Simplic.CoreLib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Simplic.CoreLib.6.0.0\lib\net451\Simplic.CoreLib.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Simplic.SAAP, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Simplic.SAAP.6.0.0\lib\net451\Simplic.SAAP.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -70,7 +62,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\Simplic.CoreLib\Simplic.CoreLib.csproj">
+      <Project>{94401a6d-06d1-4822-9e0f-f71bc92e94c4}</Project>
+      <Name>Simplic.CoreLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Simplic.SAAP\Simplic.SAAP.csproj">
+      <Project>{4494b5d8-032f-4c62-8d10-e12860824d9e}</Project>
+      <Name>Simplic.SAAP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Simplic.Log.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

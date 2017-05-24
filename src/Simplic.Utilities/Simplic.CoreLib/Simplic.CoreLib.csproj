@@ -100,7 +100,9 @@
     <Compile Include="Win_32\HwndHandling.cs" />
     <Compile Include="Win_32\WindowsSession.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Simplic.CoreLib.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

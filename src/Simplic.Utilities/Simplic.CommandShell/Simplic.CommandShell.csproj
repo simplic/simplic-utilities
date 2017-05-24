@@ -1,16 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A99DDEB9-F7B7-4B4E-9DB2-19C474D7C682}</ProjectGuid>
+    <ProjectGuid>{C3E34F8E-CC44-43BF-ABD1-3909719A0F8D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Simplic.IPC</RootNamespace>
-    <AssemblyName>Simplic.IPC</AssemblyName>
+    <RootNamespace>Simplic.CommandShell</RootNamespace>
+    <AssemblyName>Simplic.CommandShell</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +26,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Simplic.CommandShell.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,50 +36,57 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug_x86x_64|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug_x86x_64\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\Simplic.CommandShell.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IIPCController.cs" />
-    <Compile Include="IPCCommunicationMap.cs" />
-    <Compile Include="IPCConfiguration.cs" />
-    <Compile Include="IPCEventArgs.cs" />
-    <Compile Include="Commands\IPCReposonseCommand.cs" />
-    <Compile Include="MMF\MMFController.cs" />
-    <Compile Include="IPCCommand.cs" />
+    <Compile Include="Command\CommandDescriptionAttribute.cs" />
+    <Compile Include="Command\ParameterDescriptionAttribute.cs" />
+    <Compile Include="Command\CommandShellCommand.cs" />
+    <Compile Include="Command\CommandShellParameter.cs" />
+    <Compile Include="Command\CommandShellParameterCollection.cs" />
+    <Compile Include="Context\CommandShellContext.cs" />
+    <Compile Include="Parser\ShellCommandParser.cs" />
+    <Compile Include="Parser\Tokenizer\ParserConstants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Simplic.IPC.nuspec" />
+    <Compile Include="CommandShellManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Simplic.CoreLib\Simplic.CoreLib.csproj">
       <Project>{94401a6d-06d1-4822-9e0f-f71bc92e94c4}</Project>
       <Name>Simplic.CoreLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Simplic.Log\Simplic.Log.csproj">
-      <Project>{1d80119b-a27e-4684-8106-05003c94e70c}</Project>
-      <Name>Simplic.Log</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Simplic.SAAP\Simplic.SAAP.csproj">
-      <Project>{4494b5d8-032f-4c62-8d10-e12860824d9e}</Project>
-      <Name>Simplic.SAAP</Name>
+    <ProjectReference Include="..\Simplic.Lexer\Simplic.Lexer.csproj">
+      <Project>{6730be32-17e4-48eb-9249-f25857e70912}</Project>
+      <Name>Simplic.Lexer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Simplic.CommandShell.nuspec" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
