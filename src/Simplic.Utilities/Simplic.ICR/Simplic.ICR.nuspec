@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Simplic.Utilities.TemplateParser</id>
+    <id>Simplic.ICR</id>
     <version>$version$</version>
     <title>$title$</title>
     <authors>SIMPLIC GmbH</authors>
@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/simplic-systems/simplic-utilities</projectUrl>
     <iconUrl>https://avatars3.githubusercontent.com/u/14359329?v=3&amp;s=400</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>TemplateParser utility used in Simplic products.</description>
+    <description>ICR utility used in Simplic products.</description>
     <releaseNotes>- Dependency removed.</releaseNotes>
     <copyright>Copyright SIMPLIC GmbH 2017</copyright>    
   </metadata>

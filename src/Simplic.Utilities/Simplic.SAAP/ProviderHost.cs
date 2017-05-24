@@ -68,7 +68,7 @@ namespace Simplic.SAAP
             foreach (var inst in collection.Instances)
             {
                 returnValue.Add((T)inst.Value.Instance);
-            }
+            }            
 
             return returnValue.ToArray();
         }

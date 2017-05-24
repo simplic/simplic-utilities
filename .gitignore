@@ -18,9 +18,11 @@
 x64/
 x86/
 bld/
+TestResults/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+
 
 # Visual Studio 2015 cache/options directory
 .vs/
@@ -252,3 +254,4 @@ paket-files/
 *.sln.iml
 /src/Simplic.Utilities/TemplateParser/build_nuget.cmd
 /src/Simplic.Utilities/TemplateParser
+/src/Simplic.Utilities/Simplic.SAAP/publish_nuget.cmd
