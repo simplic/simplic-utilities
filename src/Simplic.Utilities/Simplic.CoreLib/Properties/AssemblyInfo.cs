@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Simplic.CoreLib")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Simplic GmbH")]
+[assembly: AssemblyCompany("SIMPLIC GmbH")]
 [assembly: AssemblyProduct("Simplic.CoreLib")]
-[assembly: AssemblyCopyright("Copyright © Simplic GmbH  2014")]
+[assembly: AssemblyCopyright("Copyright © SIMPLIC GmbH  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

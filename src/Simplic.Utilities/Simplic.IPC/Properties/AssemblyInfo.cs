@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Simplic.IPC")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Simplic GmbH")]
+[assembly: AssemblyCompany("SIMPLIC GmbH")]
 [assembly: AssemblyProduct("Simplic.IPC")]
-[assembly: AssemblyCopyright("Copyright © Simplic GmbH 2015")]
+[assembly: AssemblyCopyright("Copyright © SIMPLIC GmbH 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

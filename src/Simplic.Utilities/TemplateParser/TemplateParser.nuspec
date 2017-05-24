@@ -4,15 +4,15 @@
     <id>Simplic.Utilities.TemplateParser</id>
     <version>$version$</version>
     <title>$title$</title>
-    <authors>Simplic GmbH</authors>
-    <owners>Simplic GmbH</owners>
+    <authors>SIMPLIC GmbH</authors>
+    <owners>SIMPLIC GmbH</owners>
     <licenseUrl>https://github.com/simplic-systems/simplic-utilities/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/simplic-systems/simplic-utilities</projectUrl>
     <iconUrl>https://avatars3.githubusercontent.com/u/14359329?v=3&amp;s=400</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>TemplateParser utility used in Simplic products.</description>
     <releaseNotes>- Dependency removed.</releaseNotes>
-    <copyright>Copyright Simplic GmbH 2017</copyright>    
+    <copyright>Copyright SIMPLIC GmbH 2017</copyright>    
   </metadata>
   
 </package>

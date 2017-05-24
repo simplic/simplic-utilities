@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Simplic.ICR")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Simplic Gmbh")]
+[assembly: AssemblyCompany("SIMPLIC Gmbh")]
 [assembly: AssemblyProduct("Simplic.ICR")]
-[assembly: AssemblyCopyright("Copyright © Simplic Gmbh 2015")]
+[assembly: AssemblyCopyright("Copyright © SIMPLIC Gmbh 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
