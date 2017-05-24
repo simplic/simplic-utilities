@@ -4,8 +4,8 @@
     <id>Simplic.CoreLib</id>
     <version>$version$</version>
     <title>$title$</title>
-    <authors>simplic</authors>
-    <owners>simplic</owners>
+    <authors>Simplic GmbH</authors>
+    <owners>Simplic GmbH</owners>
     <licenseUrl>https://github.com/simplic-systems/simplic-utilities/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/simplic-systems/simplic-utilities</projectUrl>
     <iconUrl>https://avatars3.githubusercontent.com/u/14359329?v=3&amp;s=400</iconUrl>
