@@ -30,7 +30,11 @@ namespace Simplic.Utilities.TemplateParser
                 return string.Empty;
 
             input = StripSyntax(input);
-            return Smart.Format(input, values);
+
+            var _obj = new SmartObjects();
+            _obj.AddRange(values);
+
+            return Smart.Format(input, _obj);
         }
 
         /// <summary>
